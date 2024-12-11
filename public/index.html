@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Chat en Tiempo Real ⌛</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="shortcut icon" href="recursos/favicon.png" type="image/x-icon">
+  </head>
+  <body>
+    <div id="chat-container">
+      <ul id="mensajes">
+        <!-- Historial de mensajes -->
+      </ul>
+      <form id="form">
+        <input
+          id="input"
+          autocomplete="off"
+          placeholder="Escribe un mensaje..."
+        />
+        <button>Enviar 📨</button>
+      </form>
+    </div>
+
+    <!-- Sonido de notifiacion -->
+    <audio id="notifiacion" src="ruta/a/tu/sonido.mp3" preload="auto"></audio>
+
+    <!-- Socket -->
+    <script src="/socket.io/socket.io.js"></script>
+
+    <!-- Scripts -->
+    <script src="script.js"></script>
+  </body>
+</html>
